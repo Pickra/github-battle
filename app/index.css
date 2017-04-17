@@ -37,10 +37,10 @@ li { list-style-type: none; }
     margin: 10px;
 }
 
-.space-list-items { margin-bottom: 7px; }
-.loading { text-align: center; }
+.popular-item-info { margin-bottom: 7px; }
+.is-loading { text-align: center; }
 
-.avatar {
+.popular-item-avatar {
     width: 150px;
     border-radius: 50%;
 }
