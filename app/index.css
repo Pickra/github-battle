@@ -20,3 +20,27 @@ body {
 
 ul { padding: 0; }
 li { list-style-type: none; }
+
+.popular-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.popular-item {
+    margin: 20px;
+    text-align: center;
+}
+
+.popular-rank {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.space-list-items { margin-bottom: 7px; }
+.loading { text-align: center; }
+
+.avatar {
+    width: 150px;
+    border-radius: 50%;
+}
