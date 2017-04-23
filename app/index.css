@@ -87,13 +87,24 @@ a {
 .nav li { margin-right: 15px; }
 .active-nav-link { font-weight: bold; }
 
+.reset {
+    border: none;
+    background: transparent;
+    color: #d0021b;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.reset:hover { cursor: pointer; }
+
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.home-button {
+.home-button, .battle-button {
     color: lightblue;
     background: darkblue;
     border: none;
@@ -106,12 +117,15 @@ a {
     margin: 10px auto;
 }
 
-.home-button:hover:enabled {
+.home-button:hover:enabled,
+.battle-button:hover:enabled {
     background: linear-gradient(lightblue, darkblue, lightblue);
     color: cornflowerblue;
     text-decoration: none;
 }
 
-.home-button:active {
+.home-button:active,
+.battle-button:active {
     transform: translateY(1px);
 }
+
