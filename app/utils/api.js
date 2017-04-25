@@ -1,17 +1,17 @@
 var axios = require("axios");
 
 // GH api id info
-// var id = "YOUR_CLIENT_ID";
-// var sec = "YOUR_SECRET_ID";
+// var id = "clientId";
+// var sec = "secretId";
 // var params = "?client_id=" + id + "&client_secret=" + sec;
 
 function getProfile(userName) {
-    return axios.get("https://api.github.com/users/" + userName) // add params if needed
+    return axios.get("https://api.github.com/users/" + userName) // add params at the end if needed
         .then(function(user) { return user.data; })
 }
 
 function getRepos(userName) {
-    return axios.get("https://api.github.com/users/" + userName + "/repos" + "&per_page=100");  // add params if needed
+    return axios.get("https://api.github.com/users/" + userName + "/repos" + "?&per_page=100");  // add params after "repos" if needed
 }
 
 function getStarCount(repos) {
@@ -53,7 +53,7 @@ function sortPlayers(players) {
 module.exports = {
     battle: function(players) {
         return axios
-            .all([players.map(getUserData)])
+            .all(players.map(getUserData))
             .then(sortPlayers)
             .catch(handleError)
     },

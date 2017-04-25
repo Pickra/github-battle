@@ -78,7 +78,7 @@ a {
 .popular-item-info { margin-bottom: 7px; }
 .is-loading { text-align: center; }
 
-.popular-item-avatar {
+.avatar {
     width: 150px;
     border-radius: 50%;
 }
